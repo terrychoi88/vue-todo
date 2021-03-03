@@ -16,6 +16,9 @@
 export default {
     props: ['propsdata'],
     methods: {
+        modifyTodo(t, i) {
+            this.$emit('removeTodo', t, i);
+        },
         removeTodo(t, i) {
             this.$emit('removeTodo', t, i);
         }
